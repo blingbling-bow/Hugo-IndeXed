@@ -6,6 +6,12 @@ permalink: /guide/
 
 # 关于本站
 
+<DocProp>
+  <template #last-edit>2026.10.24</template>
+  <template #est-time>2 分钟</template>
+  <template #difficulty>入门</template>
+</DocProp>
+
 Hugo-IndeXed 是一个类似 Wiki 的知识站点，收集各类与希沃易 + 系列软件相关的技术细节与使用技巧，帮助人们更透明地了解部分希沃易 + 应用的底层工作原理和技术细节。
 
 ## 内容范围
@@ -21,3 +27,11 @@ Hugo-IndeXed 是一个类似 Wiki 的知识站点，收集各类与希沃易 + �
 ::: warning 声明
 本站为民间整理站点，内容仅供参考，与希沃官方无关。
 :::
+
+## 即将补充
+
+<UnderConstruction>
+  <template #description>
+    更多技术细节与使用技巧正在整理中
+  </template>
+</UnderConstruction>

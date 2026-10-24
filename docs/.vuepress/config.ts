@@ -11,7 +11,10 @@
 
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
+import { getDirname, path } from 'vuepress/utils'
 import { plumeTheme } from 'vuepress-theme-plume'
+
+const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
   // 站点部署在 Cloudflare Workers 的根路径
@@ -22,10 +25,21 @@ export default defineUserConfig({
 
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['link', { rel: 'icon', href: '/images/indexed.png' }],
   ],
 
   bundler: viteBundler(),
   shouldPrefetch: false,
+
+  // 静态资源目录（默认是 .vuepress/public）
+  public: path.resolve(__dirname, '../public'),
+
+  plugins: [
+    {
+      name: 'hugo-indexed-client-config',
+      clientConfigFile: path.resolve(__dirname, 'client.ts'),
+    },
+  ],
 
   theme: plumeTheme(),
 })

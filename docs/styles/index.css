@@ -1,0 +1,54 @@
+/**
+ * 参考 HugoAura-Enhanced Docs 的 VitePress 首页风格：
+ * 渐变标题、Logo 光晕，以及更接近的暗色表现。
+ */
+html:root {
+  /* 与参考站一致的靛蓝品牌色 */
+  --vp-c-brand-1: #3451b2;
+  --vp-c-brand-2: #3a5ccc;
+  --vp-c-brand-3: #5672cd;
+  --vp-c-brand-soft: rgb(100 108 255 / 14%);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #3492fe 30%,
+    #41d1ff
+  );
+  --vp-home-hero-image-background-image: transparent;
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+html[data-theme='dark'] {
+  --vp-c-brand-1: #a8b1ff;
+  --vp-c-brand-2: #5c73e7;
+  --vp-c-brand-3: #3e63dd;
+  --vp-c-brand-soft: rgb(100 108 255 / 16%);
+
+  --vp-button-brand-bg: #3e63dd;
+  --vp-button-brand-hover-bg: #5c73e7;
+  --vp-button-brand-active-bg: #3451b2;
+
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #3488fe 15%,
+    #0a5dbb 15%
+  );
+}
+
+@media (min-width: 640px) {
+  html:root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  html:root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+
+/* Features 图标与标题之间的间距 */
+.vp-home-feature .box > img.vp-image {
+  margin-bottom: 20px;
+}
