@@ -14,9 +14,8 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  // 部署到 https://<USERNAME>.github.io/<REPO>/ 时保持与仓库名一致；
-  // 若部署到独立域名或 https://<USERNAME>.github.io/，请改为 '/'
-  base: '/Hugo-IndeXed/',
+  // 站点部署在 Cloudflare Workers 的根路径
+  base: '/',
   lang: 'zh-CN',
   title: 'Hugo-IndeXed',
   description: '收集各类和希沃易 + 系列软件相关的技术细节与使用技巧',

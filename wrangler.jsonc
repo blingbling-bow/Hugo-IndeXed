@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hugo-indexed",
+  "compatibility_date": "2026-10-24",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "docs/.vuepress/dist",
+    "not_found_handling": "404-page"
+  }
+}

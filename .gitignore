@@ -4,5 +4,7 @@
 **/.vuepress/.temp/
 **/.vuepress/dist/
 
+.wrangler/
+
 .DS_Store
 *.log
