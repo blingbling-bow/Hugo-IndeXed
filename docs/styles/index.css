@@ -52,3 +52,33 @@ html[data-theme='dark'] {
 .vp-home-feature .box > img.vp-image {
   margin-bottom: 20px;
 }
+
+/* 压缩首页 Hero 高度，去掉与 Features 之间的大块留白 */
+html:root .vp-home-doc-hero {
+  padding-top: calc(var(--vp-nav-height) + 48px);
+  padding-bottom: 48px;
+}
+
+html:root .vp-home-doc-hero .image {
+  min-height: auto;
+  margin: 0;
+}
+
+html:root .vp-home-doc-hero .image-container {
+  width: min(280px, 100%);
+  height: auto;
+  aspect-ratio: 1;
+  transform: none;
+}
+
+/* 让图标按容器宽度 1:1 显示，避免被主题放大导致模糊 */
+html:root .vp-home-doc-hero .image-container img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 960px) {
+  html:root .vp-home-doc-hero .doc-hero-container {
+    align-items: center;
+  }
+}

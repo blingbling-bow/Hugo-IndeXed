@@ -20,6 +20,33 @@ const guide = defineCollection({
   sidebar: 'auto',
 })
 
+const seewoManager = defineCollection({
+  type: 'doc',
+  dir: 'seewo-manager',
+  linkPrefix: '/seewo-manager',
+  title: '希沃管家',
+  sidebar: 'auto',
+})
+
+const seewoControl = defineCollection({
+  type: 'doc',
+  dir: 'seewo-control',
+  linkPrefix: '/seewo-control',
+  title: '希沃集控',
+  sidebar: 'auto',
+})
+
+const seewoSoftware = defineCollection({
+  type: 'doc',
+  dir: 'seewo-software',
+  linkPrefix: '/seewo-software',
+  title: '希沃软件',
+  sidebar: 'auto',
+})
+
 export default defineCollections([
   guide,
+  seewoManager,
+  seewoControl,
+  seewoSoftware,
 ])
