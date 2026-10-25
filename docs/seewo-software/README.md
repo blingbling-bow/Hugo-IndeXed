@@ -20,10 +20,14 @@ permalink: /seewo-software/
 - 数据存储位置与配置项说明
 - 日常使用中的实用技巧
 
+## 文档索引
+
+- [EasiCamera 逆向与安全分析](/seewo-software/easicamera/)：视频展台的模块结构、五条通信通道、十项安全发现与加固清单
+
 ## 即将补充
 
 <UnderConstruction>
   <template #description>
-    希沃软件相关的技术细节正在整理中
+    其余软件分析整理中
   </template>
 </UnderConstruction>
